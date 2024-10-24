@@ -1,0 +1,2622 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+/* header section start */
+header{
+
+    background-color: white;
+    position: fixed;
+    padding: 0px 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    line-height: 80px;
+    border-bottom: 1px solid gray;
+    z-index: 999;
+
+}
+header .col #logo{
+
+    width: 100px;
+}
+header  ul{
+
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+}
+header  ul li{
+
+    padding: 0px 15px;
+}
+ 
+header  ul li a{
+
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    transition: all 0.4s;
+
+}
+header ul li a:hover{
+
+    color: #ED1651;
+}
+header  ul .menu .sub-menu{
+
+    display: none;
+}
+header  ul .menu:hover .sub-menu{
+
+     display: block;
+      
+     position: absolute;
+     color: black;
+    background: white;
+    width: 200px;
+    top: 70px;
+    z-index: 1;
+
+}
+header ul .menu:hover .sub-menu div{
+
+    line-height: 40px;
+    border-bottom: 1px solid rgb(204, 200, 200);
+    padding-left: 20px;
+    position: relative;
+    
+}
+header .col-lg-4 ul li {
+
+    padding: 0px 5px;
+}
+header .col-lg-4 ul .menu:hover .sub-menu{
+
+    display: block;
+     
+    position: absolute;
+    color: black;
+   background: white;
+   width: 200px;
+   top: 70px;
+   right: 300px;
+   box-shadow: 4px 5px 20px gray;
+    
+
+}
+header .btn {
+
+    padding: 10px 15px;
+    background-color: #ED1651;
+    height: 50px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+ 
+header .btn span{
+
+   
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0%;
+    z-index: -1; 
+    transition: all 1s;
+
+
+}
+#btn1{
+
+    
+    position: relative;
+    overflow: hidden;
+}
+#btn1:hover span{
+  
+   
+    background-color: black;
+    height: 100%;
+}
+#btn1:hover{
+
+    
+    color: white;
+
+}
+
+
+header .offcanvas .offcanvas-body nav ul{
+
+    display: inline;
+}
+header .offcanvas .offcanvas-body nav ul li{
+
+    line-height: 40px;
+}
+
+header ul .menu .sub-menu a:hover{
+
+    padding-left: 20px;
+    position: relative;
+
+} 
+header ul .menu .sub-menu div a::before{
+
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 1px;
+    top: 50%;
+    left: 0;
+    background-color: #e8064a;
+    transition: all 0.4s;
+    transform: translatey(-50%);
+
+} 
+header ul .menu .sub-menu a:hover::before{
+
+     
+    width: 15px;
+     
+
+} 
+.disabled-link {
+    pointer-events: none; /* Disables both click and hover */
+   
+  } 
+/* header section end */
+
+.carousel{
+
+    margin-top: 50px;
+}
+
+/* swiper section start */
+
+.swiper{
+
+    
+    overflow: visible; /* Allow content to overflow if needed */
+    margin: 20px 0px;
+    
+}
+
+.button-container {
+    display: flex;            /* Use Flexbox */
+    justify-content: center;  /* Center horizontally */
+}
+.swiper .card{
+
+    border: 1px solid rgb(206, 199, 199);
+    width: 430px;
+    height: 550px;
+    padding: 10px;
+    margin: 20px 40px;
+    border-radius: 0px;
+    box-sizing: border-box; /* Ensure padding is considered in the card size */
+}
+.swiper .card #logo{
+
+     width: 250px;
+    
+}
+.swiper .card h2{
+
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 25px;
+}
+.swiper .card h3{
+
+    font-size: 17px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(215, 205, 205);
+}
+.swiper .card p{
+
+    font-weight: 400;
+}
+ 
+#details-btn {
+    
+    padding: 5px 15px;
+    color: white;
+    border-radius: 3px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #e8064a;
+    font-weight: 500;
+    position: relative; /* Make sure the button is relative to contain the pseudo-element */
+    transition: all 0.4s;
+    overflow: hidden; /* Ensure overflow is hidden */
+    align-self: center; /* Center the button horizontally */
+     
+}
+
+#details-btn span {
+    z-index: 1;
+    position: relative;
+}
+
+#details-btn::before {
+    content: "";
+    width: 0px;
+    height: 20px;
+    background-color: #e8064a;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: all 0.4s;
+}
+
+ #details-btn:hover::before {
+    width: 100%; /* Expand to full width */
+    height: 100%; /* Expand to full height */
+    color: white;
+}
+#details-btn span {
+    z-index: 1;
+    position: relative;
+    transition: color 0.4s; /* Smooth transition for text color */
+}
+#details-btn:hover span {
+    color: white; /* Change text color on hover */
+}
+/* swiper section end */
+
+/* youtube section start */
+
+.youtube{
+
+    background: linear-gradient(rgba(216, 11, 66, 0.8), rgba(215, 8, 64, 0.8)), url(../images/parallax_bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    background-size: cover;
+    color: white;
+}
+.youtube .content{
+
+    margin: 50px 0px;
+}
+.youtube .content .view-btn{
+
+     
+}
+/* youtube section end */
+
+
+/* handover carousel section start */
+ 
+
+.handover{
+
+    margin: 20px 100px;
+    
+}
+.feedback .swiper2 {
+    
+    width: 650px;
+    height: 500px;
+    
+    
+}
+.feedback .swiper2 .card{
+
+    width: 200px;
+    height: 400px;
+    border: 1px solid gray;
+    padding: 0px;
+    
+
+}
+ /* handover carousel section end */
+
+/* promise section start */
+.promise{
+
+    position: relative;
+}
+.promise .border-box{
+
+    border: 1px solid gray;
+    width: 1300px;
+    height: 200px;
+    position: absolute;
+    z-index: -1;
+    
+}
+ 
+.promise img{
+
+    position: relative;
+    top: -40px;
+    
+}
+.promise .content{
+
+    width: 1100px;
+    height: 180px;
+    background-color: #F4F7F6;
+    margin: 0px 90px;
+    
+    z-index: -1;
+    padding: 10px 20px;
+    
+    
+}
+.promise .content ul li{
+
+    border-right: 1px solid gray;
+    padding-right: 10px;
+     
+    
+
+}
+.promise .content ul{
+
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+     
+}
+.promise .content img{
+
+    margin-top: 70px;
+     
+}
+.promise .content ul li h3{
+
+    font-size: 20px;
+    color: #ED1651;
+    margin-top: -30px;
+}
+/* promise section end */
+
+/* view section start */
+
+.view{
+
+    background-color: #F4F7F6;
+    padding: 50px 0px;
+    margin: 50px 0px;
+}
+.view .carousel-item .view-box{
+
+    width: 600px ;
+    height: 200px;
+    background-color: white;
+    margin-top: -40px;
+    position: relative;
+    padding: 10px 20px;
+} 
+.view .carousel-item .view-box span{
+
+    font-size: 15px;
+    font-weight: 400;
+
+}
+ 
+.view .carousel-item .view-box h2{
+
+    font-size: 18px;
+    font-weight: 700;
+    
+}
+.view .carousel-item .view-box p{
+
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+/* view section end */
+
+/* builders section start */
+.builders  h5{
+
+    font-weight: 700;
+}
+.builders  p{
+
+    font-weight:  400;
+}
+.builders .content1{
+
+     padding: 120px 20px;
+      
+}
+.builders .content2{
+
+    padding: 170px 20px;
+}
+/* builders section end */
+
+/* dream home section start */
+.dream-home{
+
+    margin-top: 100px;
+}
+.dream-home h4{
+
+    margin-bottom: -150px;
+} 
+.dream-home .get-btn{
+
+    display: flex;            /* Use Flexbox */
+    justify-content: center;  /* Center horizontally */
+} 
+/* dream home section end */
+
+/* varma home section start */
+
+.varma-home{
+
+    background-color: #F9F3ED;
+    padding: 50px 20px;
+    border-bottom: 1px solid black;
+}
+.varma-home img{
+
+    margin: 50px;
+}
+.varma-home p{
+
+    margin: 100px 20px;
+}
+
+/* varma home section end */
+
+/* footer section start */
+
+footer{
+
+    background-color: #F9F3ED;
+    padding: 50px 0px;
+}
+footer ul{
+
+    list-style: none;
+   
+}
+footer ul li{
+
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 40px;
+    position: relative; /* Necessary for the ::after positioning */
+    display: inline-block; 
+}
+footer ul li:hover{
+
+    color: #f60b4a;
+    
+     
+}
+footer ul li::after{
+
+    content: ''; /* You need to specify content, even if it's empty */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%; /* Start with 0 width */
+    height: 1px; /* The height of the border */
+    background-color: #ED1651; /* Color of the border */
+    transition: width 0.3s ease; /* Smooth transition for the width */
+}
+footer ul li:hover::after{
+
+    width: 100%; /* On hover, the width expands to 100% */
+}
+footer .row{
+ 
+    
+     border-bottom: 1px solid black;
+}
+footer h6{
+
+    font-weight: 800;
+    font-size: 16px;
+    padding-bottom: 25px;
+}
+footer .icons{
+
+    margin: 20px 0px;
+    
+}
+footer .icons .icon{
+
+    margin-right: 20px;
+     padding: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 2px solid black;
+    transition: transform 0.3s ease;
+     
+}
+footer .icons .icon:hover{
+
+    background-color: #e8064a;
+    color: white;
+     
+    
+}
+ 
+/* footer section end */
+
+
+
+
+/* for extra small screen */
+@media (min-width: 375px) and (max-width: 576px){
+
+
+    /* header section */
+    
+     
+
+     
+    .col-lg-7{
+
+        display: none;
+    }
+
+    .col-lg-4 img{
+
+        display: block;
+        margin-top: -50px;
+        position: absolute;
+        
+        margin-left: 50px;
+        position: absolute;
+       
+    }
+    header .col-lg-4 ul li {
+
+        padding: 0px 25px;
+        
+    }
+    header .col-lg-4 ul   {
+
+        margin-left: 80px;
+        
+        
+    }
+    .col-lg-4 button{
+
+        display: none;
+    }
+     
+    header .col #logo{
+    
+        width: 100px;
+        margin-top: 20px;
+    }
+    .col-lg-4 li #icon{
+
+        margin-top: -50px;
+        position: absolute;
+
+        
+    }
+    .carousel{
+
+        position: relative;
+        margin-top: 80px;
+       
+        
+    }
+    .carousel img{
+
+        height: 400px;
+    }
+    
+     
+    
+     
+    /* header section end */
+
+
+    /* swiper section start */
+
+.swiper{
+
+     
+    
+    
+    
+}
+.swiper .card{
+
+    border: 1px solid rgb(206, 199, 199);
+     width: 300px;
+    height: 400px;
+    padding: 10px;
+    margin: 5px 40px;
+    border-radius: 0px;
+}
+.swiper .card #logo{
+
+     width: 150px;
+    
+}
+.swiper .card h2{
+
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 25px;
+}
+.swiper .card h3{
+
+    font-size: 17px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(215, 205, 205);
+}
+.swiper .card p{
+
+    font-weight: 400;
+}
+.swiper .swiper-slide #btn2{
+
+    height: 50px;
+    width: 140px;
+    background-color: #ED1651;
+    color: white;
+    margin: 20px 120px;
+}
+/* swiper section end */
+
+/* youtube section start */
+
+.youtube{
+
+    background: linear-gradient(rgba(216, 11, 66, 0.8), rgba(215, 8, 64, 0.8)), url(../images/parallax_bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0px;
+    background-size: cover;
+    color: white;
+     
+}
+.youtube iframe{
+
+    width: 320px;
+}
+.youtube .content{
+
+    margin: 50px 0px;
+}
+.youtube .content #btn3{
+
+    width: 120px;
+    height: 40px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+}
+
+
+/* handover carousel section start */
+ 
+
+.handover{
+
+    margin: 10px 0px;
+    
+}
+.feedback .swiper2 {
+    
+    width: 350px;
+    height: 500px;
+    
+    
+}
+.feedback .swiper2 .card{
+
+    width: 300px;
+    height: 400px;
+    border: 1px solid gray;
+    padding: 0px;
+    
+
+}
+ /* handover carousel section end */
+
+
+
+ /* promise section start */
+.promise{
+ 
+    display: none;
+    position: relative;
+}
+.promise .border-box{
+
+    border: 1px solid gray;
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    z-index: -1;
+    
+}
+ 
+.promise img{
+
+    position: relative;
+    top: -40px;
+    
+}
+.promise .content{
+
+    width: 10px;
+    height: 180px;
+    background-color: #F4F7F6;
+    margin: 0px 90px;
+    
+    z-index: -1;
+    padding: 10px 20px;
+    
+    
+}
+.promise .content ul li{
+
+    border-right: 1px solid gray;
+    padding-right: 10px;
+     
+    
+
+}
+.promise .content ul{
+
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+     
+}
+.promise .content img{
+
+    margin-top: 70px;
+     
+}
+.promise .content ul li h3{
+
+    font-size: 20px;
+    color: #ED1651;
+    margin-top: -30px;
+}
+/* promise section end */
+
+/* view section start */
+
+.view{
+
+    background-color: #F4F7F6;
+    padding: 50px 0px;
+    margin: 50px 0px;
+}
+.view .carousel-item .view-box{
+
+    width: 300px ;
+    height: 250px;
+    background-color: white;
+    margin-top: -40px;
+    position: relative;
+    padding: 10px 20px;
+} 
+.view .carousel-item .view-box span{
+
+    font-size: 15px;
+    font-weight: 400;
+
+}
+ 
+.view .carousel-item .view-box h2{
+
+    font-size: 18px;
+    font-weight: 700;
+    
+}
+.view .carousel-item .view-box p{
+
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+/* view section end */
+
+/* builders section start */
+.builders  h5{
+
+    font-weight: 700;
+}
+.builders img{
+
+    width: 300px;
+}
+.builders  p{
+
+    font-weight:  400;
+}
+.builders .content1{
+
+     padding: 10px 20px;
+      
+}
+.builders .content2{
+
+    padding: 10px 20px;
+}
+/* builders section end */
+
+/* dream home section start */
+.dream-home{
+
+    margin-top: 100px;
+}
+.dream-home h4{
+
+    margin-bottom: -70px;
+    font-size: 10px;
+    
+} 
+.dream-home button{
+
+     margin-left: 120px;
+     margin-bottom: -150px;
+} 
+/* dream home section end */
+
+/* varma home section start */
+
+.varma-home{
+
+    background-color: #F9F3ED;
+    padding: 50px 20px;
+    border-bottom: 1px solid black;
+}
+.varma-home img{
+
+    margin: 0px;
+}
+.varma-home p{
+
+    margin: 100px 20px;
+}
+
+/* varma home section end */
+
+/* footer section start */
+
+footer{
+
+    background-color: #F9F3ED;
+    padding: 50px 0px;
+}
+footer ul{
+
+    list-style: none;
+   
+}
+footer ul li{
+
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 40px;
+    position: relative; /* Necessary for the ::after positioning */
+    display: inline-block; 
+}
+footer ul li:hover{
+
+    color: #f60b4a;
+    
+     
+}
+footer ul li::after{
+
+    content: ''; /* You need to specify content, even if it's empty */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%; /* Start with 0 width */
+    height: 1px; /* The height of the border */
+    background-color: #ED1651; /* Color of the border */
+    transition: width 0.3s ease; /* Smooth transition for the width */
+}
+footer ul li:hover::after{
+
+    width: 100%; /* On hover, the width expands to 100% */
+}
+footer .row{
+ 
+    
+     border-bottom: 1px solid black;
+}
+footer h6{
+
+    font-weight: 800;
+    font-size: 16px;
+    padding-bottom: 25px;
+}
+footer .icons{
+
+    margin: 20px 0px;
+    
+}
+footer .icons .icon{
+
+    margin-right: 20px;
+     padding: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 2px solid black;
+    transition: transform 0.3s ease;
+     
+}
+footer .icons .icon:hover{
+
+    background-color: #e8064a;
+    color: white;
+     
+    
+}
+ 
+/* footer section end */
+
+}
+
+
+
+/* Small Devices */
+@media (min-width: 576px) and (max-width: 768px) {
+
+    .col-lg-7{
+
+        display: none;
+    }
+
+    .col-lg-4 img{
+
+        display: block;
+        margin-top: -50px;
+        position: absolute;
+        
+        margin-left: 50px;
+        position: absolute;
+       
+    }
+    header .col-lg-4 ul li {
+
+        padding: 0px 25px;
+        
+    }
+    header .col-lg-4 ul   {
+
+        margin-left: 220px;
+        
+        
+    }
+    .col-lg-4 button{
+
+        display: none;
+    }
+     
+    header .col #logo{
+    
+        width: 100px;
+        margin-top: 20px;
+    }
+    .col-lg-4 li #icon{
+
+        margin-top: -50px;
+        position: absolute;
+
+        
+    }
+    .carousel{
+
+        position: relative;
+        margin-top: 80px;
+       
+        
+    }
+    .carousel img{
+
+        height: 400px;
+    }
+    
+     
+    
+     
+    /* header section end */
+
+
+    /* swiper section start */
+
+.swiper{
+
+     
+    
+    
+    
+}
+.swiper .card{
+
+    border: 1px solid rgb(206, 199, 199);
+     width: 500px;
+    height: 550px;
+    padding: 10px;
+    margin: 5px 40px;
+    border-radius: 0px;
+}
+.swiper .card #logo{
+
+     width: 150px;
+    
+}
+.swiper .card h2{
+
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 25px;
+}
+.swiper .card h3{
+
+    font-size: 17px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(215, 205, 205);
+}
+.swiper .card p{
+
+    font-weight: 400;
+}
+.swiper .swiper-slide #btn2{
+
+    height: 50px;
+    width: 140px;
+    background-color: #ED1651;
+    color: white;
+    margin: 20px 220px;
+}
+/* swiper section end */
+
+/* youtube section start */
+
+.youtube{
+
+    background: linear-gradient(rgba(216, 11, 66, 0.8), rgba(215, 8, 64, 0.8)), url(../images/parallax_bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0px;
+    background-size: cover;
+    color: white;
+     
+}
+.youtube iframe{
+
+    width: 520px;
+}
+.youtube .content{
+
+    margin: 50px 0px;
+}
+.youtube .content #btn3{
+
+    width: 120px;
+    height: 40px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+}
+
+
+/* handover carousel section start */
+ 
+
+.handover{
+
+    margin: 10px 0px;
+    
+}
+.feedback .swiper2 {
+    
+    width: 500px;
+    height: 500px;
+    
+    
+}
+.feedback .swiper2 .card{
+
+    width: 500px;
+    height: 400px;
+    border: 1px solid gray;
+    padding: 0px;
+    margin: 0px 120px;
+    
+
+}
+ /* handover carousel section end */
+
+
+
+ /* promise section start */
+.promise{
+ 
+    display: none;
+    position: relative;
+}
+.promise .border-box{
+
+    border: 1px solid gray;
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    z-index: -1;
+    
+}
+ 
+.promise img{
+
+    position: relative;
+    top: -40px;
+    
+}
+.promise .content{
+
+    width: 10px;
+    height: 180px;
+    background-color: #F4F7F6;
+    margin: 0px 90px;
+    
+    z-index: -1;
+    padding: 10px 20px;
+    
+    
+}
+.promise .content ul li{
+
+    border-right: 1px solid gray;
+    padding-right: 10px;
+     
+    
+
+}
+.promise .content ul{
+
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+     
+}
+.promise .content img{
+
+    margin-top: 70px;
+     
+}
+.promise .content ul li h3{
+
+    font-size: 20px;
+    color: #ED1651;
+    margin-top: -30px;
+}
+/* promise section end */
+
+/* view section start */
+
+.view{
+
+    background-color: #F4F7F6;
+    padding: 50px 0px;
+    margin: 50px 0px;
+}
+.view .carousel-item .view-box{
+
+    width: 470px ;
+    height: 250px;
+    background-color: white;
+    margin-top: -40px;
+    position: relative;
+    padding: 10px 20px;
+} 
+.view .carousel-item .view-box span{
+
+    font-size: 15px;
+    font-weight: 400;
+
+}
+ 
+.view .carousel-item .view-box h2{
+
+    font-size: 18px;
+    font-weight: 700;
+    
+}
+.view .carousel-item .view-box p{
+
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+/* view section end */
+
+/* builders section start */
+.builders  h5{
+
+    font-weight: 700;
+}
+.builders img{
+
+    width: 500px;
+}
+.builders  p{
+
+    font-weight:  400;
+}
+.builders .content1{
+
+     padding: 10px 20px;
+      
+}
+.builders .content2{
+
+    padding: 10px 20px;
+}
+/* builders section end */
+
+/* dream home section start */
+.dream-home{
+
+    margin-top: 100px;
+}
+.dream-home h4{
+
+    margin-bottom: -70px;
+    font-size: 17px;
+    
+} 
+.dream-home button{
+
+     margin-left: 220px;
+     margin-bottom: -150px;
+} 
+/* dream home section end */
+
+/* varma home section start */
+
+.varma-home{
+
+    background-color: #F9F3ED;
+    padding: 50px 20px;
+    border-bottom: 1px solid black;
+}
+.varma-home img{
+
+    margin: 0px 100px;
+}
+.varma-home p{
+
+    margin: 100px 20px;
+}
+
+/* varma home section end */
+
+/* footer section start */
+
+footer{
+
+    background-color: #F9F3ED;
+    padding: 50px 150px;
+}
+footer ul{
+
+    list-style: none;
+   
+}
+footer ul li{
+
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 40px;
+    position: relative; /* Necessary for the ::after positioning */
+    display: inline-block; 
+}
+footer ul li:hover{
+
+    color: #f60b4a;
+    
+     
+}
+footer ul li::after{
+
+    content: ''; /* You need to specify content, even if it's empty */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%; /* Start with 0 width */
+    height: 1px; /* The height of the border */
+    background-color: #ED1651; /* Color of the border */
+    transition: width 0.3s ease; /* Smooth transition for the width */
+}
+footer ul li:hover::after{
+
+    width: 100%; /* On hover, the width expands to 100% */
+}
+footer .row{
+ 
+    
+     border-bottom: 1px solid black;
+}
+footer h6{
+
+    font-weight: 800;
+    font-size: 16px;
+    padding-bottom: 25px;
+}
+footer .icons{
+
+    margin: 20px 0px;
+    
+}
+footer .icons .icon{
+
+    margin-right: 20px;
+     padding: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 2px solid black;
+    transition: transform 0.3s ease;
+     
+}
+footer .icons .icon:hover{
+
+    background-color: #e8064a;
+    color: white;
+     
+    
+}
+ 
+/* footer section end */
+}
+
+
+
+/* Medium Devices */
+@media (min-width: 768px) and (max-width: 992px) {
+
+
+    .col-lg-7{
+
+        display: none;
+    }
+
+    .col-lg-4 img{
+
+        display: block;
+        margin-top: -50px;
+        position: absolute;
+        
+        margin-left: 150px;
+        position: absolute;
+       
+    }
+    header .col-lg-4 ul li {
+
+        padding: 0px 25px;
+        
+    }
+    header .col-lg-4 ul   {
+
+        margin-left: 220px;
+        
+        
+    }
+    .col-lg-4 button{
+
+        display: none;
+    }
+     
+    header .col #logo{
+    
+        width: 100px;
+        margin-top: 20px;
+    }
+    .col-lg-4 li #icon{
+
+        margin-top: -55px;
+        position: absolute;
+        margin-left: 100px;
+
+        
+    }
+    .carousel{
+
+        position: relative;
+        margin-top: 80px;
+       
+        
+    }
+    .carousel img{
+
+        height: 450px;
+    }
+    
+     
+    
+     
+    /* header section end */
+
+
+    /* swiper section start */
+
+.swiper{
+
+     
+    
+    
+    
+}
+.swiper .card{
+
+    border: 1px solid rgb(206, 199, 199);
+     width: 320px;
+    height: 450px;
+    padding: 10px;
+    margin: 5px 40px;
+    border-radius: 0px;
+}
+.swiper .card #logo{
+
+     width: 150px;
+    
+}
+.swiper .card h2{
+
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 25px;
+}
+.swiper .card h3{
+
+    font-size: 17px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(215, 205, 205);
+}
+.swiper .card p{
+
+    font-weight: 400;
+}
+.swiper .swiper-slide #btn2{
+
+    height: 50px;
+    width: 140px;
+    background-color: #ED1651;
+    color: white;
+    margin: 20px 140px;
+}
+/* swiper section end */
+
+/* youtube section start */
+
+.youtube{
+
+    background: linear-gradient(rgba(216, 11, 66, 0.8), rgba(215, 8, 64, 0.8)), url(../images/parallax_bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0px;
+    background-size: cover;
+    color: white;
+     
+}
+.youtube iframe{
+
+    width: 670px;
+}
+.youtube .content{
+
+    margin: 50px 0px;
+}
+.youtube .content #btn3{
+
+    width: 120px;
+    height: 40px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+}
+
+
+/* handover carousel section start */
+ 
+
+.handover{
+
+    margin: 10px 0px;
+    
+}
+.feedback .swiper2 {
+    
+    width: 700px;
+    height: 500px;
+    
+    
+}
+.feedback .swiper2 .card{
+
+    width: 300px;
+    height: 400px;
+    border: 1px solid gray;
+    padding: 0px;
+    margin: 0px 10px;
+    
+
+}
+ /* handover carousel section end */
+
+
+
+ /* promise section start */
+.promise{
+ 
+    display: none;
+    position: relative;
+}
+.promise .border-box{
+
+    border: 1px solid gray;
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    z-index: -1;
+    
+}
+ 
+.promise img{
+
+    position: relative;
+    top: -40px;
+    
+}
+.promise .content{
+
+    width: 10px;
+    height: 180px;
+    background-color: #F4F7F6;
+    margin: 0px 90px;
+    
+    z-index: -1;
+    padding: 10px 20px;
+    
+    
+}
+.promise .content ul li{
+
+    border-right: 1px solid gray;
+    padding-right: 10px;
+     
+    
+
+}
+.promise .content ul{
+
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+     
+}
+.promise .content img{
+
+    margin-top: 70px;
+     
+}
+.promise .content ul li h3{
+
+    font-size: 20px;
+    color: #ED1651;
+    margin-top: -30px;
+}
+/* promise section end */
+
+/* view section start */
+
+.view{
+
+    background-color: #F4F7F6;
+    padding: 50px 0px;
+    margin: 50px 0px;
+}
+.view .carousel-item .view-box{
+
+    width: 600px ;
+    height: 200px;
+    background-color: white;
+    margin-top: -40px;
+    position: relative;
+    padding: 10px 20px;
+} 
+.view .carousel-item .view-box span{
+
+    font-size: 15px;
+    font-weight: 400;
+
+}
+ 
+.view .carousel-item .view-box h2{
+
+    font-size: 18px;
+    font-weight: 700;
+    
+}
+.view .carousel-item .view-box p{
+
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+/* view section end */
+
+/* builders section start */
+.builders  h5{
+
+    font-weight: 700;
+}
+.builders img{
+
+    width: 650px;
+}
+.builders  p{
+
+    font-weight:  400;
+}
+.builders .content1{
+
+     padding: 10px 20px;
+      
+}
+.builders .content2{
+
+    padding: 10px 20px;
+}
+/* builders section end */
+
+/* dream home section start */
+.dream-home{
+
+    margin-top: 100px;
+}
+.dream-home h4{
+
+    margin-bottom: -100px;
+    font-size: 20px;
+    
+} 
+.dream-home button{
+
+     margin-left: 320px;
+     margin-bottom: -220px;
+} 
+/* dream home section end */
+
+/* varma home section start */
+
+.varma-home{
+
+    background-color: #F9F3ED;
+    padding: 50px 20px;
+    border-bottom: 1px solid black;
+}
+.varma-home img{
+
+    margin: 0px 200px;
+}
+.varma-home p{
+
+    margin: 100px 20px;
+}
+
+/* varma home section end */
+
+/* footer section start */
+
+footer{
+
+    background-color: #F9F3ED;
+    padding: 50px 250px;
+    font-size: 20px;
+}
+footer ul{
+
+    list-style: none;
+   
+}
+footer ul li{
+
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 40px;
+    position: relative; /* Necessary for the ::after positioning */
+    display: inline-block; 
+}
+footer ul li:hover{
+
+    color: #f60b4a;
+    
+     
+}
+footer ul li::after{
+
+    content: ''; /* You need to specify content, even if it's empty */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%; /* Start with 0 width */
+    height: 1px; /* The height of the border */
+    background-color: #ED1651; /* Color of the border */
+    transition: width 0.3s ease; /* Smooth transition for the width */
+}
+footer ul li:hover::after{
+
+    width: 100%; /* On hover, the width expands to 100% */
+}
+footer .row{
+ 
+    
+     border-bottom: 1px solid black;
+}
+footer h6{
+
+    font-weight: 800;
+    font-size: 16px;
+    padding-bottom: 25px;
+}
+footer .icons{
+
+    margin: 20px 0px;
+    
+}
+footer .icons .icon{
+
+    margin-right: 20px;
+     padding: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 2px solid black;
+    transition: transform 0.3s ease;
+     
+}
+footer .icons .icon:hover{
+
+    background-color: #e8064a;
+    color: white;
+     
+    
+}
+ 
+/* footer section end */
+
+}
+
+
+/* Large Devices */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    .col-lg-7{
+
+        display: block;
+    }
+
+    .col-lg-4 img{
+
+        display: block;
+         
+       
+        
+        
+        position: absolute;
+       
+    }
+    header .col-lg-4 ul li {
+
+        padding: 0px 25px;
+        
+        
+    }
+    header .col-lg-4 ul   {
+
+        margin-left: -70px;
+        margin-top: 20px;
+        
+        
+    }
+    .col-lg-4 button{
+
+        display:block;
+    }
+     
+    header .col #logo{
+    
+        width: 600px;
+        margin-top: 10px;
+    }
+    .col-lg-4 li #icon{
+
+        
+        position: absolute;
+        margin-left: -20px;
+
+        
+    }
+    .carousel{
+
+        position: relative;
+        margin-top: 80px;
+       
+        
+    }
+    .carousel img{
+
+        height: 450px;
+    }
+    
+     
+    
+     
+    /* header section end */
+
+
+    /* swiper section start */
+
+.swiper{
+
+     
+    
+    
+    
+}
+.swiper .card{
+
+    border: 1px solid rgb(206, 199, 199);
+     width: 420px;
+    height: 500px;
+    padding: 10px;
+    margin: 5px 40px;
+    border-radius: 0px;
+}
+.swiper .card #logo{
+
+     width: 150px;
+    
+}
+.swiper .card h2{
+
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 25px;
+}
+.swiper .card h3{
+
+    font-size: 17px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(215, 205, 205);
+}
+.swiper .card p{
+
+    font-weight: 400;
+}
+.swiper .swiper-slide #btn2{
+
+    height: 50px;
+    width: 140px;
+    background-color: #ED1651;
+    color: white;
+    margin: 20px 230px;
+}
+/* swiper section end */
+
+/* youtube section start */
+
+.youtube{
+
+    background: linear-gradient(rgba(216, 11, 66, 0.8), rgba(215, 8, 64, 0.8)), url(../images/parallax_bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    background-size: cover;
+    color: white;
+     
+}
+.youtube iframe{
+
+    width: 470px;
+}
+.youtube .content{
+
+    margin: 50px 0px;
+}
+.youtube .content #btn3{
+
+    width: 120px;
+    height: 40px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+}
+
+
+/* handover carousel section start */
+ 
+
+.handover{
+
+    margin: 50px 20px;
+    width: 700px;
+    
+}
+.feedback .swiper2 {
+    
+    width: 600px;
+    height: 500px;
+    
+    
+}
+.feedback .swiper2 .card{
+
+    width: 300px;
+    height: 400px;
+    border: 1px solid gray;
+    padding: 0px;
+    margin: 60px 10px;
+    
+
+}
+ /* handover carousel section end */
+
+
+
+ /* promise section start */
+.promise{
+ 
+    display: none;
+    position: relative;
+}
+.promise .border-box{
+
+    border: 1px solid gray;
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    z-index: -1;
+    
+}
+ 
+.promise img{
+
+    position: relative;
+    top: -40px;
+    
+}
+.promise .content{
+
+    width: 10px;
+    height: 180px;
+    background-color: #F4F7F6;
+    margin: 0px 90px;
+    
+    z-index: -1;
+    padding: 10px 20px;
+    
+    
+}
+.promise .content ul li{
+
+    border-right: 1px solid gray;
+    padding-right: 10px;
+     
+    
+
+}
+.promise .content ul{
+
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+     
+}
+.promise .content img{
+
+    margin-top: 70px;
+     
+}
+.promise .content ul li h3{
+
+    font-size: 20px;
+    color: #ED1651;
+    margin-top: -30px;
+}
+/* promise section end */
+
+/* view section start */
+
+.view{
+
+    background-color: #F4F7F6;
+    padding: 50px 0px;
+    margin: 50px 0px;
+}
+.view .carousel-item .view-box{
+
+    width: 400px ;
+    height: 200px;
+    background-color: white;
+    margin-top: -40px;
+    position: relative;
+    padding: 10px 20px;
+} 
+.view .carousel-item .view-box span{
+
+    font-size: 15px;
+    font-weight: 400;
+
+}
+ 
+.view .carousel-item .view-box h2{
+
+    font-size: 18px;
+    font-weight: 700;
+    
+}
+.view .carousel-item .view-box p{
+
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+/* view section end */
+
+/* builders section start */
+.builders  h5{
+
+    font-weight: 700;
+}
+.builders img{
+
+    width: 450px;
+}
+.builders  p{
+
+    font-weight:  400;
+}
+.builders .content1{
+
+     padding: 50px 20px;
+      
+}
+.builders .content2{
+
+    padding: 50px 20px;
+}
+/* builders section end */
+
+/* dream home section start */
+.dream-home{
+
+    margin-top: 100px;
+}
+.dream-home h4{
+
+    margin-bottom: -200px;
+    font-size: 20px;
+    
+} 
+.dream-home button{
+
+     margin-left: 500px;
+     margin-bottom: -420px;
+} 
+/* dream home section end */
+
+/* varma home section start */
+
+.varma-home{
+
+    background-color: #F9F3ED;
+    padding: 50px 20px;
+    border-bottom: 1px solid black;
+}
+.varma-home img{
+
+    margin: 0px 0px;
+}
+.varma-home p{
+
+    margin: 0px 40px;
+}
+
+/* varma home section end */
+
+/* footer section start */
+
+footer{
+
+    background-color: #F9F3ED;
+    
+    font-size: 20px;
+}
+footer ul{
+
+    list-style: none;
+    
+    
+   
+}
+footer ul li{
+
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 40px;
+    position: relative; /* Necessary for the ::after positioning */
+    display: inline-block; 
+}
+ 
+footer h6{
+
+    font-weight: 800;
+    font-size: 16px;
+    padding-bottom: 25px;
+}
+footer .icons{
+
+    margin: 20px 0px;
+    
+}
+footer .icons .icon{
+
+    margin-right: 10px;
+     padding: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 2px solid black;
+    transition: transform 0.3s ease;
+     
+}
+ 
+ 
+/* footer section end */
+
+}
+
+/* Extra Large Devices */
+@media (min-width: 1200px) and (max-width: 1415px) {
+
+    .col-lg-7{
+
+        display: block;
+    }
+
+    .col-lg-4 img{
+
+        display: block;
+         
+       
+        
+        
+        position: absolute;
+       
+    }
+    header .col-lg-4 ul li {
+
+        padding: 0px 25px;
+        
+        
+    }
+    header .col-lg-4 ul   {
+
+        margin-left: -70px;
+        margin-top: 20px;
+        
+        
+    }
+    .col-lg-4 button{
+
+        display:block;
+    }
+     
+    header .col #logo{
+    
+        width: 600px;
+        margin-top: 10px;
+    }
+    .col-lg-4 li #icon{
+
+        
+        position: absolute;
+        margin-left: -20px;
+
+        
+    }
+    .carousel{
+
+        position: relative;
+        margin-top: 80px;
+       
+        
+    }
+    .carousel img{
+
+        height: 450px;
+    }
+    
+     
+    
+     
+    /* header section end */
+
+
+    /* swiper section start */
+
+.swiper{
+
+     
+    
+    
+    
+}
+.swiper .card{
+
+    border: 1px solid rgb(206, 199, 199);
+     width: 380px;
+    height: 500px;
+    padding: 10px;
+    margin: 5px 50px;
+    border-radius: 0px;
+}
+.swiper .card #logo{
+
+     width: 150px;
+    
+}
+.swiper .card h2{
+
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 25px;
+}
+.swiper .card h3{
+
+    font-size: 17px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(215, 205, 205);
+}
+.swiper .card p{
+
+    font-weight: 400;
+}
+.swiper .swiper-slide #btn2{
+
+    height: 50px;
+    width: 140px;
+    background-color: #ED1651;
+    color: white;
+    margin: 20px 180px;
+}
+/* swiper section end */
+
+/* youtube section start */
+
+.youtube{
+
+    background: linear-gradient(rgba(216, 11, 66, 0.8), rgba(215, 8, 64, 0.8)), url(../images/parallax_bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    background-size: cover;
+    color: white;
+     
+}
+.youtube iframe{
+
+    width: 540px;
+}
+.youtube .content{
+
+    margin: 50px 0px;
+}
+.youtube .content #btn3{
+
+    width: 120px;
+    height: 40px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+}
+
+
+/* handover carousel section start */
+ 
+
+.handover{
+
+    margin: 50px 20px;
+   
+    
+}
+.feedback .swiper2 {
+    
+     
+    height: 500px;
+    
+    
+}
+.feedback .swiper2 .card{
+
+    width: 300px;
+    height: 400px;
+    border: 1px solid gray;
+    padding: 0px;
+    margin: 60px 10px;
+    
+
+}
+ /* handover carousel section end */
+
+
+
+ /* promise section start */
+.promise{
+ 
+    display: none;
+    position: relative;
+}
+.promise .border-box{
+
+    border: 1px solid gray;
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    z-index: -1;
+    
+}
+ 
+.promise img{
+
+    position: relative;
+    top: -40px;
+    
+}
+.promise .content{
+
+    width: 10px;
+    height: 180px;
+    background-color: #F4F7F6;
+    margin: 0px 90px;
+    
+    z-index: -1;
+    padding: 10px 20px;
+    
+    
+}
+.promise .content ul li{
+
+    border-right: 1px solid gray;
+    padding-right: 10px;
+     
+    
+
+}
+.promise .content ul{
+
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+     
+}
+.promise .content img{
+
+    margin-top: 70px;
+     
+}
+.promise .content ul li h3{
+
+    font-size: 20px;
+    color: #ED1651;
+    margin-top: -30px;
+}
+/* promise section end */
+
+/* view section start */
+
+.view{
+
+    background-color: #F4F7F6;
+    padding: 50px 0px;
+    margin: 50px 0px;
+}
+.view .carousel-item .view-box{
+
+    width: 600px ;
+    height: 200px;
+    background-color: white;
+    margin-top: -40px;
+    position: relative;
+    padding: 10px 20px;
+} 
+.view .carousel-item .view-box span{
+
+    font-size: 15px;
+    font-weight: 400;
+
+}
+ 
+.view .carousel-item .view-box h2{
+
+    font-size: 18px;
+    font-weight: 700;
+    
+}
+.view .carousel-item .view-box p{
+
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+/* view section end */
+
+/* builders section start */
+.builders  h5{
+
+    font-weight: 700;
+}
+.builders img{
+
+    width: 620px;
+}
+.builders  p{
+
+    font-weight:  400;
+}
+.builders .content1{
+
+     padding: 100px 20px;
+      
+}
+.builders .content2{
+
+    padding: 100px 20px;
+}
+/* builders section end */
+
+/* dream home section start */
+.dream-home{
+
+    margin-top: 100px;
+}
+.dream-home h4{
+
+    margin-bottom: -200px;
+    font-size: 20px;
+    
+} 
+.dream-home button{
+
+     margin-left: 650px;
+     margin-bottom: -420px;
+} 
+/* dream home section end */
+
+/* varma home section start */
+
+.varma-home{
+
+    background-color: #F9F3ED;
+    padding: 50px 20px;
+    border-bottom: 1px solid black;
+}
+.varma-home img{
+
+    margin: 0px 0px;
+}
+.varma-home p{
+
+    margin: 0px 40px;
+}
+
+/* varma home section end */
+
+/* footer section start */
+
+footer{
+
+    background-color: #F9F3ED;
+    padding: 50px 0px;
+    font-size: 20px;
+}
+footer ul{
+
+    list-style: none;
+   
+}
+footer ul li{
+
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 40px;
+    position: relative; /* Necessary for the ::after positioning */
+    display: inline-block; 
+}
+footer ul li:hover{
+
+    color: #f60b4a;
+    
+     
+}
+footer ul li::after{
+
+    content: ''; /* You need to specify content, even if it's empty */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%; /* Start with 0 width */
+    height: 1px; /* The height of the border */
+    background-color: #ED1651; /* Color of the border */
+    transition: width 0.3s ease; /* Smooth transition for the width */
+}
+footer ul li:hover::after{
+
+    width: 100%; /* On hover, the width expands to 100% */
+}
+footer .row{
+ 
+    
+     border-bottom: 1px solid black;
+}
+footer h6{
+
+    font-weight: 800;
+    font-size: 16px;
+    padding-bottom: 25px;
+}
+footer .icons{
+
+    margin: 20px 0px;
+    
+}
+footer .icons .icon{
+
+    margin-right: 20px;
+     padding: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 2px solid black;
+    transition: transform 0.3s ease;
+     
+}
+footer .icons .icon:hover{
+
+    background-color: #e8064a;
+    color: white;
+     
+    
+}
+ 
+/* footer section end */
+
+}

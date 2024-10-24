@@ -1,0 +1,1091 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+/* header section start */
+header{
+
+    background-color: white;
+    position: fixed;
+    padding: 0px 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    line-height: 80px;
+    border-bottom: 1px solid gray;
+    z-index: 999;
+    
+}
+header .col #logo{
+
+    width: 100px;
+}
+header  ul{
+
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+}
+header  ul li{
+
+    padding: 0px 15px;
+}
+ 
+header  ul li a{
+
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    transition: all 0.4s;
+
+}
+header ul li a:hover{
+
+    color: #ED1651;
+}
+header  ul .menu .sub-menu{
+
+    display: none;
+}
+header  ul .menu:hover .sub-menu{
+
+     display: block;
+      
+     position: absolute;
+     color: black;
+    background: white;
+    width: 200px;
+    top: 70px;
+    z-index: 1;
+
+}
+header ul .menu:hover .sub-menu div{
+
+    line-height: 40px;
+    border-bottom: 1px solid rgb(204, 200, 200);
+    padding-left: 20px;
+    position: relative;
+}
+header .col-lg-4 ul li {
+
+    padding: 0px 5px;
+}
+header .col-lg-4 ul .menu:hover .sub-menu{
+
+    display: block;
+     
+    position: absolute;
+    color: black;
+   background: white;
+   width: 200px;
+   top: 70px;
+   right: 300px;
+   box-shadow: 4px 5px 20px gray;
+    
+
+}
+header .btn {
+
+    padding: 10px 15px;
+    background-color: #ED1651;
+    height: 50px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+ 
+header .btn span{
+
+   
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0%;
+    z-index: -1; 
+    transition: all 1s;
+
+
+}
+#btn1{
+
+    
+    position: relative;
+    overflow: hidden;
+}
+#btn1:hover span{
+  
+   
+    background-color: black;
+    height: 100%;
+}
+#btn1:hover{
+
+    
+    color: white;
+
+}
+
+
+header .offcanvas .offcanvas-body nav ul{
+
+    display: inline;
+}
+header .offcanvas .offcanvas-body nav ul li{
+
+    line-height: 40px;
+}
+
+header ul .menu .sub-menu a:hover{
+
+    padding-left: 20px;
+    position: relative;
+
+} 
+header ul .menu .sub-menu div a::before{
+
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 1px;
+    top: 50%;
+    left: 0;
+    background-color: #e8064a;
+    transition: all 0.4s;
+    transform: translatey(-50%);
+
+} 
+header ul .menu .sub-menu a:hover::before{
+
+     
+    width: 15px;
+     
+
+} 
+.disabled-link {
+    pointer-events: none; /* Disables both click and hover */
+   
+  }  
+ 
+  #details-btn {
+    
+    padding: 5px 15px;
+    color: white;
+    border-radius: 3px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #e8064a;
+    font-weight: 500;
+    position: relative; /* Make sure the button is relative to contain the pseudo-element */
+    transition: all 0.4s;
+    overflow: hidden; /* Ensure overflow is hidden */
+    align-self: center; /* Center the button horizontally */
+     
+}
+
+#details-btn span {
+    z-index: 1;
+    position: relative;
+}
+
+#details-btn::before {
+    content: "";
+    width: 0px;
+    height: 20px;
+    background-color: #e8064a;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: all 0.4s;
+}
+
+ #details-btn:hover::before {
+    width: 100%; /* Expand to full width */
+    height: 100%; /* Expand to full height */
+    color: white;
+}
+#details-btn span {
+    z-index: 1;
+    position: relative;
+    transition: color 0.4s; /* Smooth transition for text color */
+}
+#details-btn:hover span {
+    color: white; /* Change text color on hover */
+}
+ 
+/* header section end */
+
+/* aprtment section start */
+
+.apartment{
+
+    background-color: #F4F7F6;
+    margin-top: 80px;
+    padding: 50px 0px;
+}
+
+.apartment #btn-1{
+
+    width: 130px;
+    background-color: #e8064a;
+    color: white;
+}
+/* aprtment section end */
+
+ 
+
+/* card section start */
+
+.images{
+
+    margin: 70px 0px;
+}
+.images .card{
+
+    width: 620px;
+    background-color: #F4F7F6;
+    border-radius: 0px;
+    margin-bottom: 20px;
+}
+.images .card ul{
+
+    list-style: none;
+    margin-top: 20px;
+    border-top: 1px solid rgb(184, 181, 181);
+    font-weight: 300;
+}
+.images .card ul #li-1{
+
+     margin-left: -30px;
+     border-right: 1px solid gray;
+     padding-right: 10px;
+}
+.images .card img{
+
+    border-radius: 0px;
+}
+.images .card span{
+
+    font-size: 14px;
+    font-weight: 500;
+}
+.images .card #li-2{
+
+    margin-left: -30px;
+    border: none;
+    font-weight: 400;
+} 
+.images .card #icon{
+
+    color: #e8064a;
+}
+.images .card p{
+
+    font-weight: 300;
+}
+ 
+ 
+ 
+/* card section end */
+
+ 
+/* frequently asked questions section start */
+ 
+ 
+.question{
+
+    padding: 50px 0px;
+    background-color: #F4F7F6;
+}
+
+.question .container button{
+
+    width: 600px;
+    border: 1px solid black;
+    
+    text-decoration: none;
+    line-height: 50px;
+    color: black;
+    margin-bottom: 20px;
+}
+.container .btn-1{
+
+     line-height: 0px;
+     height: 30px;
+     width: 170px;
+     word-spacing: 7px;
+     border-radius: 20px;
+     background-color: #171245;
+     transition: all 0.3s;
+     color: white;
+     margin-bottom: 20px;
+}
+.container .btn-1:hover{
+
+    background-color: #7127DD;
+}
+
+/* frequently asked questions section end */
+
+
+
+
+
+/* footer section start */
+
+footer{
+
+    background-color: #F9F3ED;
+    padding: 50px 0px;
+}
+footer ul{
+
+    list-style: none;
+   
+}
+footer ul li{
+
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 40px;
+    position: relative; /* Necessary for the ::after positioning */
+    display: inline-block; 
+}
+footer ul li:hover{
+
+    color: #f60b4a;
+    
+     
+}
+footer ul li::after{
+
+    content: ''; /* You need to specify content, even if it's empty */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%; /* Start with 0 width */
+    height: 1px; /* The height of the border */
+    background-color: #ED1651; /* Color of the border */
+    transition: width 0.3s ease; /* Smooth transition for the width */
+}
+footer ul li:hover::after{
+
+    width: 100%; /* On hover, the width expands to 100% */
+}
+footer .row{
+ 
+    
+     border-bottom: 1px solid black;
+}
+footer h6{
+
+    font-weight: 800;
+    font-size: 16px;
+    padding-bottom: 25px;
+}
+footer .icons{
+
+    margin: 20px 0px;
+    
+}
+footer .icons .icon{
+
+    margin-right: 20px;
+     padding: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 2px solid black;
+    transition: transform 0.3s ease;
+     
+}
+footer .icons .icon:hover{
+
+    background-color: #e8064a;
+    color: white;
+     
+    
+}
+ 
+/* footer section end */
+
+
+
+/* for extra small screen */
+@media (min-width: 375px) and (max-width: 576px){
+
+
+    /* header section */
+    
+     
+
+     
+    .col-lg-7{
+
+        display: none;
+    }
+
+    .col-lg-4 img{
+
+        display: block;
+        margin-top: -50px;
+        position: absolute;
+        
+        margin-left: 150px;
+        position: absolute;
+       
+    }
+    header .col-lg-4 ul li {
+
+        padding: 0px 25px;
+        
+    }
+    header .col-lg-4 ul   {
+
+        margin-left: 80px;
+        
+        
+    }
+    .col-lg-4 button{
+
+        display: none;
+    }
+     
+    header .col #logo{
+    
+        width: 100px;
+        margin-top: 20px;
+    }
+    .col-lg-4 li #icon{
+
+        margin-top: -50px;
+        position: absolute;
+        margin-left: 100px;
+
+        
+    }
+
+/* aprtment section start */
+
+.apartment{
+
+    background-color: #F4F7F6;
+    margin-top: 80px;
+    padding: 30px 0px;
+    width: 630px;
+   
+}
+
+.apartment #btn-1{
+
+    width: 130px;
+    background-color: #e8064a;
+    color: white;
+}
+/* aprtment section end */
+
+
+.images{
+
+    margin: 70px 60px;
+}
+.images .card{
+
+    width: 500px;
+    background-color: #F4F7F6;
+    border-radius: 0px;
+    margin-bottom: 20px;
+}
+    
+/* varma home section start */
+
+.varma-home{
+
+    background-color: #F9F3ED;
+    padding: 50px 20px;
+    border-bottom: 1px solid black;
+}
+.varma-home img{
+
+    margin: 0px;
+}
+.varma-home p{
+
+    margin: 100px 20px;
+}
+
+/* varma home section end */
+
+.question{
+
+    width: 630px;
+    padding: 50px 0px;
+    background-color: #F4F7F6;
+}
+
+.question .container button{
+
+    width: 600px;
+    border: 1px solid black;
+    
+    text-decoration: none;
+    line-height: 50px;
+    color: black;
+    margin-bottom: 20px;
+}
+footer{
+
+    background-color: #F9F3ED;
+    padding: 50px 50px;
+    width: 630px;
+}
+}
+
+/* Small Devices */
+@media (min-width: 576px) and (max-width: 768px) {
+
+    .col-lg-7{
+
+        display: none;
+    }
+
+    .col-lg-4 img{
+
+        display: block;
+        margin-top: -50px;
+        position: absolute;
+        
+        margin-left: 100px;
+        position: absolute;
+       
+    }
+    header .col-lg-4 ul li {
+
+        padding: 0px 25px;
+        
+    }
+    header .col-lg-4 ul   {
+
+        margin-left: 220px;
+        
+        
+    }
+    .col-lg-4 button{
+
+        display: none;
+    }
+     
+    header .col #logo{
+    
+        width: 100px;
+        margin-top: 20px;
+    }
+    .col-lg-4 li #icon{
+
+        margin-top: -50px;
+        position: absolute;
+        margin-left: 50px;
+
+        
+    }
+    /* aprtment section start */
+
+.apartment{
+
+    background-color: #F4F7F6;
+    margin-top: 80px;
+    padding: 30px 0px;
+     
+   
+}
+
+.apartment #btn-1{
+
+    width: 130px;
+    background-color: #e8064a;
+    color: white;
+}
+/* aprtment section end */
+ 
+.images{
+
+    margin: 70px 60px;
+}
+.images .card{
+
+    width: 500px;
+    background-color: #F4F7F6;
+    border-radius: 0px;
+    margin-bottom: 20px;
+}
+ 
+.question{
+
+    
+    padding: 50px 0px;
+    background-color: #F4F7F6;
+   
+}
+
+.question .container button{
+
+    width: 600px;
+    border: 1px solid black;
+    margin-left: -50px;
+    text-decoration: none;
+    line-height: 50px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+/* varma home section start */
+
+.varma-home{
+
+    background-color: #F9F3ED;
+    padding: 50px 20px;
+    border-bottom: 1px solid black;
+}
+.varma-home img{
+
+    margin: 0px;
+}
+.varma-home p{
+
+    margin: 100px 20px;
+}
+
+/* varma home section end */
+footer{
+
+    background-color: #F9F3ED;
+    padding: 50px 100px;
+     
+}
+    footer{
+
+        background-color: #F9F3ED;
+        padding: 50px 150px;
+    }
+}
+
+/* Medium Devices */
+@media (min-width: 768px) and (max-width: 992px) {
+
+
+    .col-lg-7{
+
+        display: none;
+    }
+
+    .col-lg-4 img{
+
+        display: block;
+        margin-top: -50px;
+        position: absolute;
+        
+        margin-left: 150px;
+        position: absolute;
+       
+    }
+    header .col-lg-4 ul li {
+
+        padding: 0px 25px;
+        
+    }
+    header .col-lg-4 ul   {
+
+        margin-left: 220px;
+        
+        
+    }
+    .col-lg-4 button{
+
+        display: none;
+    }
+     
+    header .col #logo{
+    
+        width: 100px;
+        margin-top: 20px;
+    }
+    .col-lg-4 li #icon{
+
+        margin-top: -55px;
+        position: absolute;
+        margin-left: 100px;
+
+        
+    }
+
+     /* card section start */
+
+.images{
+
+    margin: 70px 100px;
+}
+.images .card{
+
+    width: 600px;
+    background-color: #F4F7F6;
+    border-radius: 0px;
+    margin-bottom: 20px;
+}
+ 
+ 
+ 
+ 
+/* card section end */
+
+    .question .container button{
+
+        width: 600px;
+        border: 1px solid black;
+        margin-left: 20px;
+        text-decoration: none;
+        line-height: 50px;
+        color: black;
+        margin-bottom: 20px;
+    }
+
+
+
+
+    /* varma home section start */
+
+.varma-home{
+
+    background-color: #F9F3ED;
+    padding: 50px 20px;
+    border-bottom: 1px solid black;
+}
+.varma-home img{
+
+    margin: 0px 200px;
+}
+.varma-home p{
+
+    margin: 100px 20px;
+}
+
+/* varma home section end */
+
+/* footer section start */
+
+footer{
+
+    background-color: #F9F3ED;
+    padding: 50px 100px;
+    font-size: 20px;
+}
+footer ul{
+
+    list-style: none;
+   
+}
+ 
+ 
+ 
+/* footer section end */
+
+}
+
+/* Large Devices */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    .col-lg-7{
+
+        display: block;
+    }
+
+    .col-lg-4 img{
+
+        display: block;
+         
+       
+        
+        
+        position: absolute;
+       
+    }
+    header .col-lg-4 ul li {
+
+        padding: 0px 25px;
+        
+        
+    }
+    header .col-lg-4 ul   {
+
+        margin-left: -70px;
+        margin-top: 20px;
+        
+        
+    }
+    .col-lg-4 button{
+
+        display:block;
+    }
+     
+    header .col #logo{
+    
+        width: 600px;
+        margin-top: 10px;
+    }
+    .col-lg-4 li #icon{
+
+        
+        position: absolute;
+        margin-left: -20px;
+
+        
+    }
+     
+    
+     
+    
+     
+    /* header section end */
+
+    
+
+    /* card section start */
+
+.images{
+
+    margin: 70px 0px;
+}
+.images .card{
+
+    width: 450px;
+    background-color: #F4F7F6;
+    border-radius: 0px;
+    margin-bottom: 20px;
+}
+ 
+ 
+ 
+ 
+/* card section end */
+
+.question .container button{
+
+    width: 450px;
+    border: 1px solid black;
+    
+    text-decoration: none;
+    line-height: 25px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+
+/* varma home section start */
+
+.varma-home{
+
+    background-color: #F9F3ED;
+    padding: 50px 20px;
+    border-bottom: 1px solid black;
+}
+.varma-home img{
+
+    margin: 0px 0px;
+}
+.varma-home p{
+
+    margin: 0px 40px;
+}
+
+/* varma home section end */
+
+/* footer section start */
+
+footer{
+
+    background-color: #F9F3ED;
+    
+    font-size: 20px;
+}
+footer ul{
+
+    list-style: none;
+    
+    
+   
+}
+footer ul li{
+
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 40px;
+    position: relative; /* Necessary for the ::after positioning */
+    display: inline-block; 
+}
+ 
+footer h6{
+
+    font-weight: 800;
+    font-size: 16px;
+    padding-bottom: 25px;
+}
+footer .icons{
+
+    margin: 20px 0px;
+    
+}
+footer .icons .icon{
+
+    margin-right: 10px;
+     padding: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 2px solid black;
+    transition: transform 0.3s ease;
+     
+}
+ 
+ 
+/* footer section end */
+
+}
+
+/* Extra Large Devices */
+@media (min-width: 1200px) and (max-width: 1415px) {
+
+    .col-lg-7{
+
+        display: block;
+    }
+
+    .col-lg-4 img{
+
+        display: block;
+         
+       
+        
+        
+        position: absolute;
+       
+    }
+    header .col-lg-4 ul li {
+
+        padding: 0px 25px;
+        
+        
+    }
+    header .col-lg-4 ul   {
+
+        margin-left: -70px;
+        margin-top: 20px;
+        
+        
+    }
+    .col-lg-4 button{
+
+        display:block;
+    }
+     
+    header .col #logo{
+    
+        width: 600px;
+        margin-top: 10px;
+    }
+    .col-lg-4 li #icon{
+
+        
+        position: absolute;
+        margin-left: -20px;
+
+        
+    }
+    .carousel{
+
+        position: relative;
+        margin-top: 80px;
+       
+        
+    }
+    .carousel img{
+
+        height: 450px;
+    }
+    
+     
+    
+     
+    /* header section end */
+
+ 
+ 
+/* card section start */
+
+.images{
+
+    margin: 70px 0px;
+}
+.images .card{
+
+    width: 520px;
+    background-color: #F4F7F6;
+    border-radius: 0px;
+    margin-bottom: 20px;
+}
+ 
+ 
+ 
+ 
+/* card section end */
+
+.question .container button{
+
+    width: 550px;
+    border: 1px solid black;
+    
+    text-decoration: none;
+    line-height: 25px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+/* varma home section start */
+
+.varma-home{
+
+    background-color: #F9F3ED;
+    padding: 50px 20px;
+    border-bottom: 1px solid black;
+}
+.varma-home img{
+
+    margin: 0px 0px;
+}
+.varma-home p{
+
+    margin: 0px 40px;
+}
+
+/* varma home section end */
+
+/* footer section start */
+
+footer{
+
+    background-color: #F9F3ED;
+    padding: 50px 0px;
+    font-size: 20px;
+}
+ 
+ 
+ 
+ 
+/* footer section end */
+
+}
