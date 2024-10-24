@@ -60,7 +60,7 @@ const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    slidesPerView: 2,
+    slidesPerView:2,
 
     autoplay: {
       delay: 2000,  // 3000 milliseconds (3 seconds) ke baad next slide
